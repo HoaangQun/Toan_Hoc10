@@ -3,13 +3,13 @@
 y = f(x)
 
 #khái niệm cơ bản:
-biến  (biến độc lập) khi đưa vào hàm và thực hiện một số phép biến đổi sẽ cho rax biến y(biến phụ thuộc)
+biến  (biến độc lập) khi đưa vào hàm và thực hiện một số phép biến đổi sẽ cho ra biến y(biến phụ thuộc)
 
 x(đầu vào)
 y(đầu ra)
 f(x) : giá trị của hàm tại x
 
-có 2 dạng là hàm số bậc 1 (đường thẳng) hoặc hàm số bậc 2 (parabol)
+có 2 dạng là hàm số bậc 1 (đường thẳng) và hàm số bậc 2 (parabol)
 
 #tôi đã viết một chương trình để xử lí những nội dung cơ bản của hàm số
 có 2 file thực thi và 1 file source
