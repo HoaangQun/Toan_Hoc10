@@ -58,7 +58,7 @@ def ham_so_bac_hai():
 
     print ("------")
 
-    def tinh_ham_bac_hai(x)
+    def tinh_ham_bac_hai(x):
         return a*x**2 + b*x + c
 
     x = int(input("Nhập vào x: "))
