@@ -52,9 +52,25 @@ def ham_so_bac_hai():
 
     Delta = b**2 - 4*a*c
     print ( f"Delta = {Delta}")
+    if Delta > 0:
+        print ("Phương trình có 2 nghiệm phân biệt (cắt trục x tại 2 điểm)")
+    elif Delta == 0:
+        print ("Phương trình có 1 nghiệm kép (tiếp xúc với trục x)")
+    else:
+        print ("Phương trình vô nghiệm (không cắt trục x)")
     if a > 0:
+        print ("Hàm số cực tiểu tại đỉnh")
         print ( f"Hàm số trên đồng biến trên khoảng ({-b/(2*a)} , +++)")
         print ( f"Nghịch biến trên khoảng (-++ , {-b/(2*a)})")
+        print ( f"Tập giá trị = [{-(Delta/(4*a))} , +++)")
+    if a < 0:
+        print ("Hàm số cực đại tại đỉnh ")
+        print ( f"Hàm số trên đồng biến trên khoảng (-++ , {-b/(2*a)})")
+        print ( f"Nghịch biến trên khoảng ({-b/(2*a)} , +++)")
+        print ( f"Tập giá trị = (-++ , {-(Delta/(4*a))}]")
+
+    print ( f"Toạ độ đỉnh parabol: ({-(b/(2*a))} , {-(Delta/(4*a))})")
+    print ("Giao với trục tung tại (0 , {c})")
 
     print ("------")
 
@@ -64,3 +80,9 @@ def ham_so_bac_hai():
     x = int(input("Nhập vào x: "))
     y = tinh_ham_bac_hai(x)
     print( f"Kết quả y cho ra là: {y}")
+    if x < -(b/(2*a)):
+        print ("Hàm số đồng biến")
+    elif x > -(b/(2*a)):
+        print ("Hàm số nghịch biến")
+
+
