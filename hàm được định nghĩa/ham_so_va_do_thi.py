@@ -131,6 +131,3 @@ def ham_so_bac_hai():
 
     x_values = [-(x), -(x / 2), 0, x / 2, x]
     y_values = [tinh_ham_bac_hai(val) for val in x_values]
-
-ham_so_bac_nhat()
-ham_so_bac_hai()
