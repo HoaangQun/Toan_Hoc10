@@ -1,3 +1,3 @@
 # Toan_Hoc10
 
-hiểu bài = ra file
+luyện code bằng toán
