@@ -5,13 +5,13 @@ def ham_so_bac_nhat():
 
     print(f"y = ax + b (a!=0)")
     while True:
-        a = int(input("Nhập vào hệ số (a): "))
+        a = float(input("Nhập vào hệ số (a): "))
         if a == 0:
             print("Hệ số a bắt buộc phải != 0!")
         else:
             break
     print(f"y = {a}x + b")
-    b = int(input("Nhập vào hằng số (b): "))
+    b = float(input("Nhập vào hằng số (b): "))
     print(f"y = {a}x + {b}")
 
     # Xác định tính đồng biến, nghịch biến
@@ -67,15 +67,15 @@ def ham_so_bac_hai():
 
     print ( f"y = ax^2 + bx + c (a!=0)")
     while True:
-        a = int(input("Nhập vào hệ số (a): "))
+        a = float(input("Nhập vào hệ số (a): "))
         if a == 0:
             print("Hệ số a bắt buộc phải != 0!")
         else:
             break
     print ( f"y = {a}x^2 + bx + c")
-    b = int (input("Nhập vào hằng số b: "))
+    b = float (input("Nhập vào hằng số b: "))
     print ( f"y = {a}x^2 + {b}x + c")
-    c = int (input("Nhập vào hằng số c: "))
+    c = float (input("Nhập vào hằng số c: "))
     print ( f"y = {a}x^2 + {b}x + {c}")
 
     Delta = b**2 - 4*a*c
@@ -96,7 +96,7 @@ def ham_so_bac_hai():
         print ( f"Hàm số trên đồng biến trên khoảng (-++ , {-b/(2*a)})")
         print ( f"Nghịch biến trên khoảng ({-b/(2*a)} , +++)")
         print ( f"Tập giá trị = (-++ , {-(Delta/(4*a))}]")
-
+    
     print ( f"Toạ độ đỉnh parabol: ({-(b/(2*a))} , {-(Delta/(4*a))})")
     print ( f"Giao với trục tung tại (0 , {c})")
 
@@ -131,3 +131,4 @@ def ham_so_bac_hai():
 
     x_values = [-(x), -(x / 2), 0, x / 2, x]
     y_values = [tinh_ham_bac_hai(val) for val in x_values]
+
